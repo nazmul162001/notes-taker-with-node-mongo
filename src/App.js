@@ -21,6 +21,11 @@ let allNotes = [
     user_name: "oshan",
     data: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
   },
+  {
+    _id: 4,
+    user_name: "kshan",
+    data: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+  },
 ];
 
 function App() {
