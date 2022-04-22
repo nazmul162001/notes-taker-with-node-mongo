@@ -16,7 +16,10 @@ const customStyles = {
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#root");
 
-export default function UpdateModal({ handleUpdate }) {
+
+//don't worry its just a package for modal. just go and explore https://www.npmjs.com/package/react-modal
+
+export default function UpdateModal() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -51,7 +54,7 @@ export default function UpdateModal({ handleUpdate }) {
         </button>
         <div>Please insert your text</div>
         <div className=" p-3 color-4D4C7D">
-          <form className="container " onSubmit={handleUpdate}>
+          <form className="container " >
             <div className="input-group mb-3 mt-5">
               <input
                 type="text"

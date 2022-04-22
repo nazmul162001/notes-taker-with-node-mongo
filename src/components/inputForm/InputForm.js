@@ -1,15 +1,19 @@
 import React from "react";
 
-const inputForm = ({ handlePost }) => {
+const inputForm = () => {
+
+
+
   return (
     <div className=" p-3 color-4D4C7D">
-      <form className="container " onSubmit={handlePost}>
+      <form className="container " >
         <div className="input-group mb-3 mt-5">
           <input
             type="text"
             className="form-control"
             placeholder="Your name"
             aria-label="Username"
+            name="user_name"
           />
         </div>
 
@@ -18,6 +22,7 @@ const inputForm = ({ handlePost }) => {
           <textarea
             className="form-control"
             aria-label="With textarea"
+            name="text"
           ></textarea>
         </div>
         <div className="mt-4">

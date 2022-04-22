@@ -10,7 +10,7 @@ const customStyles = {
   width: "80px",
 };
 
-const NoteCard = ({ note, handleDelete, handleUpdate }) => {
+const NoteCard = ({ note }) => {
 
 
   return (
@@ -27,19 +27,19 @@ const NoteCard = ({ note, handleDelete, handleUpdate }) => {
         </div>
         <div className="card-body mt-5">
           <h5 className="card-title">Author : {note.user_name}</h5>
-          <p className="card-text">{note.data}</p>
+          <p className="card-text">{note.text}</p>
         </div>
         <div className="card-footer d-flex justify-content-center">
           <div>
             <button
               className="color-801336 btn btn-sm mx-2 "
-              onClick={() => handleDelete(note._id)}
+              
             >
               delete
             </button>
           </div>
           {/* <button>update</button> */}
-          <UpdateModal handleUpdate={handleUpdate} />
+          <UpdateModal  />
         </div>
       </div>
     </div>
